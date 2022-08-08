@@ -241,7 +241,6 @@ window.addEventListener('keypress', (e) => {
 });
 
 // Current Problems: 
-// - Can't finish game when the word has double of one letter
 // - spacing is a little weird sometimes on incorrect letters line
 // SMH: needs to clean up a lot; figure out how to reset word without repeating the code
 
