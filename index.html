@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Members Only!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <section class="hero is-fullheight has-background-black">
+      <div class="hero-body">
+        <div id="main-body" class="container">
+          <div class="center">
+            <!--<img
+              id="main"
+              src="https://images.mysecuritysign.com/img/lg/S/members-only-sign-se-2438_showcase-burrev.png"
+              alt="Members Only"
+            />-->
+						<h1 id="main" class="default title has-text-light">Welcome</h1>
+          </div>
+          <div class="clue-1" class="container">
+            <p class="center has-text-light">
+              <b>What</b>&nbsp;is the password
+            </p>
+          </div>
+          <div id="button" class="container center hidden">
+            <button class="button is-danger is-light">
+              <!--<img
+                class="image small"
+                src="https://www.kindpng.com/picc/m/72-729857_golden-key-png-image-with-transparent-background-golden.png"
+                alt="key"
+              />-->
+							Click.
+            </button>
+          </div>
+          <div id="clue-2" class="container hidden">
+            <p class="center has-text-light">
+              ERROR: Page not found!
+            </p>
+          </div>
+				<div class="hangman hidden">
+					<div class="title has-text-white"><p>Let's play Hangman!!</p></div>
+					<br>
+					<div id="guesses" class="is-size-3 has-text-light"><p>You have <b>10</b> guesses remaining.</p></div>
+					<br>
+					<div id="rightLetters" class="center is-size-1 has-text-danger">
+						<div id="letter1"><p>_&nbsp;</p></div>
+						<div id="letter2"><p>_&nbsp;</p></div>
+						<div id="letter3"><p>_&nbsp;</p></div>
+						<div id="letter4"><p>_&nbsp;</p></div>
+						<div id="letter5"><p>_&nbsp;</p></div>
+					</div>
+					<br>
+					<div id="wrongLetters" class="is-size-3"><p>Letters you've guessed: </p></div>
+				</div>
+				<div>
+					
+					<div class = "endGame hidden">
+						<p class="is-size-1 center has-text-danger">Game Over.</p>
+						<br>
+						<div id="button" class="container center">
+							<button type="button" id="playButton" class="button is-centered is-danger is-large">Play Again...</button>
+						</div>
+						<br>
+						<p class = "correctAnswer is-size-5 has-text-centered is-danger"></p>
+					</div>
+					
+					<div class = "winGame hidden">
+						<p class="is-size-1 has-text-centered has-text-success">WINNER WINNER CHICKEN DINNER! WHOOO!!</p>
+						<br>
+						<div id="button" class="container center">
+							<button type="button" id="playButtonW" class="button is-centered is-success is-large">Again!!</button>
+						</div>
+					</div>
+					<!--<div class="is-size-5"><p>Something at the bottom</p></div> -->
+	      </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
